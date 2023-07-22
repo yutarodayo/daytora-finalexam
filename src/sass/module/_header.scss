@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  height: 6.8rem;
+  background: $font-key-white;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.header__logo {
+  @include mq(md) {
+    display: none;
+    }
+}
+
+.header__logo a {
+  display: block;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 2rem 1.6rem;
+  color: #3E3E3E;
+
+}
+
+.header__nav {
+  display: none;
+
+  @include mq(md) {
+  display: block;
+  }
+}
+
+.header__nav-items {
+  display: flex;
+  justify-content: end;
+}
