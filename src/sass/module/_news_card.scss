@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.news__card {
+   
+   border-bottom: solid 1px #CECDCD;
+   font-size: rem(14);
+   padding: rem(14) rem(55) rem(10) rem(16);
+
+   &:nth-child(2) {
+    border-top: 1px solid #CECDCD;
+   }
+
+    a {
+        display: block;
+    }
+}
+
+.news__header {
+display: flex;
+align-items: center;
+}
+
+.news__date {
+    letter-spacing: rem(0.35);
+}
+
+.news__title {
+font-size: rem(12);
+letter-spacing: rem(0.3);
+margin-left: rem(24);
+}
+
+.news__text {
+line-height: 1.429;
+}

@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.news {
+    background-color: #F3F3F3;
+} 
+
+.news__box {
+    background-color: $font-key-white;
+    box-shadow: 0 5px 12px #3E3E3E33;
+}
+
+.news__inner {
+    
+}
