@@ -1,47 +1,113 @@
 @use "global" as *;
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 400;
-  height: 6.8rem;
-  background: $font-key-white;
-}
+// .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 11;
+//   width: 100%;
+//   max-width: rem(1280);
+//   height: rem(68);
+//   min-height: rem(68);
+//   background-color: #fff;
+//   position: relative;
+
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: inherit;
+//     height: inherit;
+//     top: 0;
+//     left: 0;
+//     background-color: rgba($color: gray, $alpha: 0.15);
+//   }
+//     // 上記position:fix崩れる＋position効かず下とあわないので保留
+// headerにbeforeはつけない
+
+//     @include mq(md) {
+//       height: rem(83);
+//       position: relative;
+//   background-image: url(../images/common/mv@2x.png);
+//   background-size: rem(1380);
+//   background-position: top left 41%;
+//     }
+  // }
+
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 11;
+      width: 100%;
+      height: rem(68);
+      min-height: rem(68);
+      background-color: rgba(255, 255, 255, 1);
+
+      @include mq(md) {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+  }
+
 
 .header__inner {
   height: inherit;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
+  @include mq(md) {
+    padding: 0;
+  }
 }
 
 .header__logo {
+
+  z-index: 11;
   @include mq(md) {
     display: none;
-    }
+  }
 }
 
 .header__logo a {
   display: block;
-  font-size: 2.3rem;
+  font-size: rem(23);
   font-weight: bold;
-  padding: 2rem 1.6rem;
-  color: #3E3E3E;
-
+  padding: rem(20) rem(16);
+  color: #3e3e3e;
 }
 
 .header__nav {
   display: none;
 
   @include mq(md) {
-  display: block;
+    display: block;
+    width: 100%;
+    height: inherit;
+    
   }
 }
 
 .header__nav-items {
+  height: inherit;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav-item {
+  display: flex;
+  justify-content: center;
+
+  &:nth-child(n + 2) {
+    padding-left: rem(40);
+  }
+}
+
+.header__nav-link {
+  display: block;
+  font-size: rem(16);
+  letter-spacing: rem(-0.4);
 }

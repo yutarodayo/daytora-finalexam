@@ -3,19 +3,21 @@
 /* drawer */
 
 .drawer__icon {
-    width: 2.6rem;
-    height: inherit;
-    z-index: 300;
-    transition: transform ease 0.5s 0s;
-    
-    
+  position: fixed;
+  width: rem(26);
+  height: rem(20);
+  top: rem(24);
+  right: rem(16);
+  z-index: 302;
+  transition: transform ease 0.5s 0s;
+  
     
     @include mq(md){
       display: none;
     }
     
     &.is-active {
-      transform: translateX(-200px);
+      transform: translateX(rem(-300));
   
       .drawer__icon__bar1 {
         display: none;
@@ -24,18 +26,27 @@
       .drawer__icon__bar2 {
         top: 8px;
         transform: rotate(-45deg);
+        background: $font-key-white;
+        
       }
   
       .drawer__icon__bar3 {
         top: 8px;
         transform: rotate(45deg);
+        background: $font-key-white;
+   
       }
     }
+  }
+
+  .drawer__background {
+    display: none;
+  
   }
   
   .drawer__icon__bars {
     // ハンバーガーアイコンのこと
-    width: 2.6rem;
+    width: rem(26);
     height: inherit;
     position: relative;
     display: block;
@@ -47,39 +58,36 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 2.6rem;
-    height: 0.4rem;
+    width: rem(26);
+    height: 4px;
     background: $font-key-black;
+    
   }
   
-  .drawer-icon__bar1 {
-  }
-  
-  .drawer-icon__bar2 {
+  .drawer__icon__bar2 {
     top: 8px;
   }
   
-  .drawer-icon__bar3 {
+  .drawer__icon__bar3 {
     top: 16px;
   }
 
   
   
   .drawer__content {
-
-    display: none;
-
-
     position: fixed;
     top: 0;
     right: 0;
-    width: 20rem;
+    width: rem(300);
     height: 100vh;
     background: #fff;
-    box-shadow: 0 0 3px rgba(#000, 0.16);
-    z-index: 299;
+    z-index: 301;
     transform: translateX(105%);
     transition: transform ease 0.5s 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
    
   
@@ -88,29 +96,16 @@
     }
   }
   
-  .drawer__items {
-  }
   
-  .drawer__item {
-    border-bottom: dotted 0.1rem #707070;
+  .drawer__items__item {
+    
   
     a {
       display: block;
       text-decoration: none;
-      position: relative;
-      padding: 2rem;
-  
-      &::after {
-        content: "";
-        position: absolute;
-        right: 2.1rem;
-        top: 50%;
-        width: 0.5rem;
-        height: 0.8rem;
-        transform: translateY(-50%);
-        background: url(../img/drawer-arrow-b@2x.png) no-repeat center center /
-          contain;
-      }
+      padding: rem(16);
+      font-size: rem(18);
+      font-weight: 500;
     }
   }
 
@@ -118,15 +113,15 @@
 
   }
   
-  .drawer-background {
+  .drawer__background {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(#000, 0.8);
-    z-index: 298;
-    display: none;
+    height: 100vh;
+    background-color: rgba(62, 62, 62, 0.7);
+    z-index: 300;
+    
   
     &.is-active {
       display: block;

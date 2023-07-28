@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.button-wrapper {
+    text-align: center;
+
+    @include mq(md) {
+    width: 50p;
+    text-align: left;
+    }
+
+    a {
+        display: inline-block;
+        color: $font-key-white;
+        padding: rem(12) rem(32);
+        font-weight: 700;
+        background-color: $key-orange;
+        border-radius: 10px;
+        box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
+    }
+}

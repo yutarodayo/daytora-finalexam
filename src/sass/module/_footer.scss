@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.footer {
+  color: $font-key-white;
+  background-color: $font-key-black;
+  position: relative;
+  text-align: center;
+
+  @include mq(md) {
+    text-align: justify;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: rgba($color: $font-key-black, $alpha: 0.1);
+  }
+}
+
+.footer__inner {
+  padding-top: rem(60);
+  padding-bottom: rem(57);
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.footer__left {
+  font-size: rem(14);
+  letter-spacing: rem(0.35);
+
+  @include mq(md) {
+    padding-left: rem(120);
+  }
+}
+
+.footer__sns {
+  font-size: rem(36);
+  display: flex;
+  justify-content: center;
+
+  @include mq(md) {
+    justify-content: start;
+  }
+}
+
+.footer__sns li {
+  padding-left: rem(25);
+  padding-right: rem(25);
+
+  @include mq(md) {
+    &:nth-child(-n + 1) {
+      padding-left: 0;
+      padding-right: rem(16);
+    }
+
+    &:nth-child(n + 2) {
+      padding-left: rem(16);
+      padding-right: rem(16);
+    }
+  }
+}
+
+.footer__sitemap {
+  a {
+    display: block;
+  }
+}
+
+.footer__privacy-protection {
+  a {
+    display: block;
+  }
+}
+
+.footer__privacy-policy {
+  a {
+    display: block;
+  }
+}
+
+.footer__right {
+  @include mq(md) {
+    padding-right: rem(120);
+    text-align: right;
+  }
+}
+
+.footer__logo {
+  font-size: rem(32);
+  font-weight: 700;
+  color: $key-gray;
+
+  a {
+    display: block;
+  }
+}
+
+.footer__copy {
+  font-size: rem(12);
+}

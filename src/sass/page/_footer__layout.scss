@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.l_footer__sns__wrapper {
+    
+}
+
+.footer__left__layout {
+
+    div:nth-child(n + 2) {
+    margin-top: rem(42);
+
+    @include mq(md) {
+    margin-top: rem(40);
+    }
+    }
+
+    div:nth-child(n + 3) {
+        margin-top: rem(26);
+
+        @include mq(md) {
+            margin-top: rem(24);
+            }
+    }
+}
+
+.l_footer__logo {
+    margin-top: rem(40);
+    @include mq(md) {
+    margin-top: 0;
+    }
+}
+
+.l_footer__copy {
+    margin-top: rem(12);
+}
