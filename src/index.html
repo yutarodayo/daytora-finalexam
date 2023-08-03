@@ -34,12 +34,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/script.js"></script>
@@ -124,61 +125,173 @@
     <section class="news">
       <div class="news__inner inner">
         <div class="news__box">
-        <h2 class="section-title section-title__layout section-title__news">News</h2>
-        <article class="news__card news__card_l">
-          <a href="">
-          <div class="news__header news__header_l">
-            <div class="news__date news__date_l"><time datetime="">2019-02-01</time></div>
-            <h3 class="news__title news__title_l">テキスト</h3>
+          <h2 class="section-title section-title__layout section-title__news">
+            News
+          </h2>
+          <div class="news__card__link">
+            <a href="">
+              <article class="news__card news__card_l">
+                <div class="news__header news__header_l">
+                  <div class="news__date news__date_l">
+                    <time datetime="">2019-02-01</time>
+                  </div>
+                  <h3 class="news__title news__title_l">テキスト</h3>
+                </div>
+                <p class="news__text news__text_l">
+                  ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース
+                </p>
+              </article>
+            </a>
           </div>
-              <p class="news__text news__text_l">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
-        </a>
-        </article>
-        <article class="news__card news__card_l">
-          <a href="">
-          <div class="news__header news__header_l">
-            <div class="news__date news__date_l"><time datetime="">2019-02-01</time></div>
-            <h3 class="news__title news__title_l">テキスト</h3>
+          <div class="news__card__link">
+            <a href="">
+              <article class="news__card news__card_l">
+                <div class="news__header news__header_l">
+                  <div class="news__date news__date_l">
+                    <time datetime="">2019-02-01</time>
+                  </div>
+                  <h3 class="news__title news__title_l">テキスト</h3>
+                </div>
+                <p class="news__text news__text_l">
+                  ニュースニュースニュースニュースニュースニュースニュース
+                </p>
+              </article>
+            </a>
           </div>
-              <p class="news__text news__text_l">ニュースニュースニュースニュースニュースニュースニュース</p>
-        </a>
-        </article>
-        <article class="news__card news__card_l">
-          <a href="">
-          <div class="news__header news__header_l">
-            <div class="news__date news__date_l"><time datetime="">2019-02-01</time></div>
-            <h3 class="news__title news__title_l">テキスト</h3>
+          <div class="news__card__link">
+            <a href="">
+              <article class="news__card news__card_l">
+                <div class="news__header news__header_l">
+                  <div class="news__date news__date_l">
+                    <time datetime="">2019-02-01</time>
+                  </div>
+                  <h3 class="news__title news__title_l">テキスト</h3>
+                </div>
+                <p class="news__text news__text_l">
+                  ニュースニュースニュースニュースニュースニュースニュース
+                </p>
+              </article>
+            </a>
           </div>
-              <p class="news__text news__text_l">ニュースニュースニュースニュースニュースニュースニュース</p>
-        </a>
-        </article>
-<div class="button__general__wrapper button__general__wrapper_l">
-  <button><a href="">more</a></button>
-</div>
+
+          <div class="button__general__wrapper button__general__wrapper_l">
+            <button class="button__general"><a href="">MORE</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /news -->
+
+    <!-- service -->
+    <section class="service">
+     <div class="service__top">
+      <div class="service__inner service__inner__layout">
+        <h2 class="section-title section-title__layout section-title__service">
+          Service
+        </h2>
+      </div>
+    </div>
+    <div class="service__under">
+      <div class="service__inner__under">
+        <div class="service__box service__box__layout">
+          <div class="service__cards service__cards__layout">
+            <div class="service__card service__card__layout">
+              <div class="service__card__image service__card__image__layout">
+                <img
+                  src="/assets/images/common/service1.svg"
+                  alt=""
+                  class="service__card__image"
+                />
+              </div>
+              <div class="service__card__title service__card__title__layout">
+                WEB<br />DESIGN
+              </div>
+              <p class="service__card__text service__card__text__layout">
+                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              </p>
+            </div>
+            <div class="service__card service__card__layout">
+              <div class="service__card__image service__card__image__layout">
+                <img
+                  src="/assets/images/common/service2.svg"
+                  alt=""
+                  class="service__card__image"
+                />
+              </div>
+              <div class="service__card__title service__card__title__layout">
+                WEB<br />CODING
+              </div>
+              <p class="service__card__text service__card__text__layout">
+                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              </p>
+            </div>
+            <div class="service__card service__card__layout">
+              <div class="service__card__image service__card__image__layout">
+                <img
+                  src="/assets/images/common/service3.svg"
+                  alt=""
+                  class="service__card__image"
+                />
+              </div>
+              <div class="service__card__title service__card__title__layout">
+                CMS<br />CUSTOMIZE
+              </div>
+              <p class="service__card__text service__card__text__layout">
+                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </section>
 
+    <section class="results">
+      <div class="results__inner results__inner__layout">
+        <h2 class="section-title section-title__layout section-title__results">
+          Results
+        </h2>
+        <div class="results__box results__box__layout">
 
+      </div>
+      </div>
 
-    <!-- /news -->
+    </section>
 
     <footer class="footer">
       <div class="footer__inner inner">
         <div class="footer__left footer__left__layout">
           <div class="footer__sns__wrapper">
             <ul class="footer__sns">
-              <li class="footer__sns1"><a href="" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-              <li class="footer__sns2"><a href="" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li class="footer__sns1">
+                <a href="" aria-label="twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer__sns2">
+                <a href="" aria-label="facebook"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
             </ul>
           </div>
-          <div class="footer__sitemap l_footer__sitemap"><a href="">サイトマップ</a></div>
-          <div class="footer__privacy-protection l_footer__privacy-protection"><a href="">個人情報保護方針</a></div>
-          <div class="footer__privacy-policy"><a href="">プライバシーポリシー</a></div>
+          <div class="footer__sitemap l_footer__sitemap">
+            <a href="">サイトマップ</a>
+          </div>
+          <div class="footer__privacy-protection l_footer__privacy-protection">
+            <a href="">個人情報保護方針</a>
+          </div>
+          <div class="footer__privacy-policy">
+            <a href="">プライバシーポリシー</a>
+          </div>
         </div>
         <div class="footer__right">
-          <div class="footer__logo l_footer__logo"><a href="">Sample Corp.</a></div>
-          <div class="footer__copy l_footer__copy">© デイトラ Landing page Sample.</div>
+          <div class="footer__logo l_footer__logo">
+            <a href="">Sample Corp.</a>
+          </div>
+          <div class="footer__copy l_footer__copy">
+            © デイトラ Landing page Sample.
+          </div>
         </div>
       </div>
     </footer>

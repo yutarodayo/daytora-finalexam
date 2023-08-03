@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.service__inner {
+    
+    
+}
+
+
+.service__top {
+    background-color: $font-key-black;
+
+}
+
+.service__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: rem(1280);
+    height: rem(480);
+    background-color: $font-key-black;
+
+    @include mq(md) {
+    height: rem(400);
+    }
+}
+
+.service__under {
+    background-color: #F3F3F3;
+}
+
+.service__inner__under {
+    height: rem(391);
+    
+}
+
+.section-title__service {
+    color: $font-key-white;
+}
+
+.service__box__layout {
+margin: 0 auto;
+    min-width: calc(100vw - rem(16));
+
+    
+}

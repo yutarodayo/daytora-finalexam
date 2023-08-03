@@ -2,15 +2,33 @@
 
 .news {
     position: relative;
-    height: rem(553);
+    height: rem(600);
+
+    @include mq(md) {
+    height: inherit;
+    }
 }
 
-
-
 .news__inner {
+    
     position: absolute;
     content: "";
     height: inherit;
-    top: -10%;
+    top: -5%;
     left: 0;
+
+    @include mq(md) {
+    position: static;
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    
+    }
+}
+
+.news__card_l {
+    margin: 0 auto;
+}
+
+.news__text_l {
+    margin-top: rem(12);
 }

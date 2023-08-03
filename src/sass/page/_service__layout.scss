@@ -1,0 +1,33 @@
+@use "global" as *;
+
+
+
+.service__inner__under {
+    position: relative;
+    
+}
+
+.service__box__layout {
+    margin: 0 auto;
+  padding: 0 rem(16);
+  position: absolute;
+  content: "";
+  height: rem(694);
+  top: rem(-340);
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+   padding: 0 rem(160);
+   top: rem(-240);
+  }
+}
+
+.service__cards__layout {
+    margin: 0 auto;
+}
+
+
+
+
+

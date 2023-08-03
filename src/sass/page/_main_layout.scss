@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.section-main__layout {
-    
-}
-
-.main-title__layout {
-
-}
-
 .main-subtitle__layout {
 padding-top: rem(17);
+}
+
+.news__card_l {
+    margin: 0 auto;
+}
+
+.news__text_l {
+    margin-top: rem(12);
 }
