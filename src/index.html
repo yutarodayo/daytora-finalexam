@@ -34,9 +34,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
 
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -184,79 +186,601 @@
 
     <!-- service -->
     <section class="service">
-     <div class="service__top">
-      <div class="service__inner service__inner__layout">
-        <h2 class="section-title section-title__layout section-title__service">
-          Service
-        </h2>
+      <div class="service__top">
+        <div class="service__inner service__inner__layout">
+          <h2
+            class="section-title section-title__layout section-title__service"
+          >
+            Service
+          </h2>
+        </div>
       </div>
-    </div>
-    <div class="service__under">
-      <div class="service__inner__under">
-        <div class="service__box service__box__layout">
-          <div class="service__cards service__cards__layout">
-            <div class="service__card service__card__layout">
-              <div class="service__card__image service__card__image__layout">
-                <img
-                  src="/assets/images/common/service1.svg"
-                  alt=""
-                  class="service__card__image"
-                />
+      <div class="service__under">
+        <div class="service__inner__under">
+          <div class="service__box service__box__layout">
+            <div class="service__cards service__cards__layout">
+              <div class="service__card service__card__layout">
+                <figure
+                  class="service__card__image service__card__image__layout"
+                >
+                  <img src="/assets/images/common/service1.svg" alt="" />
+                </figure>
+                <div class="service__card__title service__card__title__layout">
+                  WEB<br />DESIGN
+                </div>
+                <p class="service__card__text service__card__text__layout">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
               </div>
-              <div class="service__card__title service__card__title__layout">
-                WEB<br />DESIGN
+              <div class="service__card service__card__layout">
+                <figure
+                  class="service__card__image service__card__image__layout"
+                >
+                  <img src="/assets/images/common/service2.svg" alt="" />
+                </figure>
+                <div class="service__card__title service__card__title__layout">
+                  WEB<br />CODING
+                </div>
+                <p class="service__card__text service__card__text__layout">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
               </div>
-              <p class="service__card__text service__card__text__layout">
-                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-              </p>
-            </div>
-            <div class="service__card service__card__layout">
-              <div class="service__card__image service__card__image__layout">
-                <img
-                  src="/assets/images/common/service2.svg"
-                  alt=""
-                  class="service__card__image"
-                />
+              <div class="service__card service__card__layout">
+                <figure
+                  class="service__card__image service__card__image__layout"
+                >
+                  <img src="/assets/images/common/service3.svg" alt="" />
+                </figure>
+                <div class="service__card__title service__card__title__layout">
+                  CMS<br />CUSTOMIZE
+                </div>
+                <p class="service__card__text service__card__text__layout">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
               </div>
-              <div class="service__card__title service__card__title__layout">
-                WEB<br />CODING
-              </div>
-              <p class="service__card__text service__card__text__layout">
-                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-              </p>
-            </div>
-            <div class="service__card service__card__layout">
-              <div class="service__card__image service__card__image__layout">
-                <img
-                  src="/assets/images/common/service3.svg"
-                  alt=""
-                  class="service__card__image"
-                />
-              </div>
-              <div class="service__card__title service__card__title__layout">
-                CMS<br />CUSTOMIZE
-              </div>
-              <p class="service__card__text service__card__text__layout">
-                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
 
+    <!-- results -->
     <section class="results">
       <div class="results__inner results__inner__layout">
-        <h2 class="section-title section-title__layout section-title__results">
-          Results
-        </h2>
-        <div class="results__box results__box__layout">
+        <div class="results__inner__inner">
+          <h2
+            class="section-title section-title__layout section-title__results"
+          >
+            Results
+          </h2>
+          <div class="results__box results__box__layout">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
 
-      </div>
-      </div>
+                <div class="swiper-slide">
+                  <div class="results__card results__card__layout">
+                    <figure
+                      class="results__card__image results__card__image__layout"
+                    >
+                      <img src="/assets/images/common/slide1@2x.png" alt="" />
+                    </figure>
+                    <div class="results__card__body">
+                      <div
+                        class="results__card__title results__card__title__layout"
+                      >
+                        テスト2とかくに人の世は住みにくい。
+                      </div>
+                      <p
+                        class="results__card__text results__card__text__layout"
+                      >
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="results__card results__card__layout">
+                    <figure
+                      class="results__card__image results__card__image__layout"
+                    >
+                      <img src="/assets/images/common/slide1@2x.png" alt="" />
+                    </figure>
+                    <div class="results__card__body">
+                      <div
+                        class="results__card__title results__card__title__layout"
+                      >
+                        テスト2とかくに人の世は住みにくい。
+                      </div>
+                      <p
+                        class="results__card__text results__card__text__layout"
+                      >
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="results__card results__card__layout">
+                    <figure
+                      class="results__card__image results__card__image__layout"
+                    >
+                      <img src="/assets/images/common/slide1@2x.png" alt="" />
+                    </figure>
+                    <div class="results__card__body">
+                      <div
+                        class="results__card__title results__card__title__layout"
+                      >
+                        テスト3とかくに人の世は住みにくい。
+                      </div>
+                      <p
+                        class="results__card__text results__card__text__layout"
+                      >
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="results__card results__card__layout">
+                    <figure
+                      class="results__card__image results__card__image__layout"
+                    >
+                      <img src="/assets/images/common/slide1@2x.png" alt="" />
+                    </figure>
+                    <div class="results__card__body">
+                      <div
+                        class="results__card__title results__card__title__layout"
+                      >
+                        テスト4とかくに人の世は住みにくい。
+                      </div>
+                      <p
+                        class="results__card__text results__card__text__layout"
+                      >
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="results__card results__card__layout">
+                      <figure
+                        class="results__card__image results__card__image__layout"
+                      >
+                        <img src="/assets/images/common/slide1@2x.png" alt="" />
+                      </figure>
+                      <div class="results__card__body">
+                        <div
+                          class="results__card__title results__card__title__layout"
+                        >
+                          テスト2とかくに人の世は住みにくい。
+                        </div>
+                        <p
+                          class="results__card__text results__card__text__layout"
+                        >
+                          どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="results__card results__card__layout">
+                      <figure
+                        class="results__card__image results__card__image__layout"
+                      >
+                        <img src="/assets/images/common/slide1@2x.png" alt="" />
+                      </figure>
+                      <div class="results__card__body">
+                        <div
+                          class="results__card__title results__card__title__layout"
+                        >
+                          テスト2とかくに人の世は住みにくい。
+                        </div>
+                        <p
+                          class="results__card__text results__card__text__layout"
+                        >
+                          どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- /swiper -->
+
+            <div class="button__general__wrapper">
+              <button class="button__general button__general__results">
+                <a href="">VIEW ALL</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- /results -->
+
+    <!-- price -->
+    <section class="price price__layout">
+      <div class="price-inner inner">
+        <h2 class="section-title section-title__layout section-title__price">
+          Price
+        </h2>
+        <div class="price__table__wrapper">
+          <table class="price__table">
+            <tr class="price__table__row">
+              <th class="price__table__header">row 1</th>
+              <td class="price__table__data">Price ¥10,000</td>
+            </tr>
+            <tr class="price__table__row">
+              <th class="price__table__header">row 2</th>
+              <td class="price__table__data">Price ¥10,000</td>
+            </tr>
+            <tr class="price__table__row">
+              <th class="price__table__header">row 3</th>
+              <td class="price__table__data">Price ¥10,000</td>
+            </tr>
+          </table>
+          <div class="price__attention">※ 上記料金はサンプルです。</div>
+        </div>
+      </div>
+    </section>
+    <!-- /price -->
+
+    <!-- comment -->
+    <section class="comment comment__layout">
+      <div class="comment-inner">
+        <div class="comment__left">
+          <h2
+            class="section-title section-title__layout section-title__comment"
+          >
+            Comments
+          </h2>
+          <div class="comment__left__body">
+            <figure class="comment__left__img">
+              <img src="/assets/images/common/comments1@2x.png" alt="" />
+            </figure>
+            <p class="comment__left__text">
+              どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+            </p>
+          </div>
+          <div class="comment__left__body">
+            <figure class="comment__left__img">
+              <img src="/assets/images/common/comments2@2x.png" alt="" />
+            </figure>
+            <p class="comment__left__text">
+              どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+            </p>
+          </div>
+        </div>
+        <div class="comment__right">
+          <img
+            src="/assets/images/common/comments3@2x.png"
+            alt=""
+            class="comment__right__img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- /comment -->
+
+    <!-- qa -->
+    <section class="qa qa__layout">
+      <div class="qa-inner inner">
+        <h2 class="section-title section-title__layout section-title__qa">
+          Q&A
+        </h2>
+        <div class="qa__cotainer">
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">質問質問質問？</div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">
+                質問質問質問？<br />また、質問は質問質問？
+              </div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">質問質問質問？</div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">質問質問質問？</div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">質問質問質問？</div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+          <div class="qa__box__wrapper">
+            <div class="qa__box__q__wrapper">
+              <div class="qa__box__q__mark">Q</div>
+              <div class="qa__box__q">質問質問質問？</div>
+              <div class="qa__box__icon">
+                <div class="qa__bar1"></div>
+                <div class="qa__bar2"></div>
+              </div>
+            </div>
+            <div class="qa__a">
+              <div class="qa-content">
+                回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /qa -->
+
+    <!-- access -->
+    <section class="access">
+      <div class="access__top">
+        <div class="access__inner inner">
+          <div class="access__container">
+            <div class="access__content__wrapper">
+              <div
+                class="section-title section-title__layout section-title__access"
+              >
+                Access
+              </div>
+              <div class="access__content">
+                <p class="access__info">
+                  〒106-6126<br />東京都港区六本木 6丁目 10-1<br />六本木ヒルズ森タワー
+                </p>
+              </div>
+            </div>
+            <div class="access__map__wrapper">
+              <div class="access__map">
+                <div class="iframe-wrap">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.660533421289!2d139.72663167495435!3d35.660734472593845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b828453ffff%3A0xb8603beeb9b150d8!2z5YWt5pys5pyo44OS44Or44K6IOajruOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1691409241333!5m2!1sja!2sjp"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="button__general__wrapper button__general__wrapper_l button__general__access__wrapper"
+          >
+            <button class="button__general button__general__access">
+              <a href="">Google Maps</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="access__under"></div>
+    </section>
+    <!-- /access -->
+
+    <!-- contact -->
+    <section class="contact wow fadeInUp" data-wow-duration="3s" id="Contact">
+      <div class="contact__form__inner inner">
+        <div class="contact__form__wrapper">
+          <div class="section-title__contact__wrapper">
+            <h2 class="section-title section-title__contact">Contact Us</h2>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</p>
+          </div>
+          <div class="contact__form">
+            <form
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdra7NBvSAQEJQBm_z_wkS6l47799Cbrcu6DwkLoQcPCz62fw/formResponse"
+              class="contact-form"
+              id="form"
+            >
+              <dl class="contact__form__dl">
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">
+                    <label for="select">お問い合わせ種別</label>
+                  </dt>
+                  <div class="contact__form__input__select__wrapper">
+                    <dd
+                      class="contact__form__input contact__form__input__bordernone"
+                    >
+                      <select
+                        class="contact__form__input__select"
+                        name="entry.421431860"
+                        id="select"
+                        placeholder="選択してください"
+                      >
+                        <option selected disabled>選択してください</option>
+                        <option value="項目1">項目1</option>
+                        <option value="項目1">項目2</option>
+                        <option value="項目1">項目3</option>
+                        <option value="項目1">項目4</option>
+                      </select>
+                    </dd>
+                  </div>
+                </div>
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">
+                    <label for="name" class="contact__form__label__required"
+                      >氏名</label
+                    >
+                  </dt>
+                  <dd class="contact__form__input">
+                    <input
+                      type="text"
+                      name="entry.421431860"
+                      id="name"
+                      placeholder="氏名"
+                      required
+                    />
+                  </dd>
+                </div>
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">
+                    <label for="kana" class="contact__form__label__required"
+                      >フリガナ</label
+                    >
+                  </dt>
+                  <dd class="contact__form__input">
+                    <input
+                      type="text"
+                      name="entry.421431860"
+                      id="kana"
+                      placeholder="フリガナ"
+                      required
+                    />
+                  </dd>
+                </div>
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">
+                    <label for="email">メールアドレス</label>
+                  </dt>
+                  <dd class="contact__form__input">
+                    <input
+                      type="email"
+                      name="emailAddress"
+                      id="email"
+                      placeholder="sample@gmail.com"
+                    />
+                  </dd>
+                </div>
+                <!-- ラジオに変える -->
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">性別</dt>
+                  <dd class="contact__form__input__radio">
+                    <div class="contact__radio__wrap">
+                      <label class="contact__radio">
+                        <input
+                          type="radio"
+                          name="entry.915234116"
+                          class="radio-input"
+                          value="男性"
+                          checked
+                        />
+                        <span class="contact__radio__part">男性</span>
+                      </label>
+                      <label class="contact__radio">
+                        <input
+                          type="radio"
+                          name="entry.915234116"
+                          class="radio-input"
+                          value="女性"
+                        />
+                        <span class="contact__radio__part">女性</span>
+                      </label>
+                    </div>
+                  </dd>
+                </div>
+                <div class="contact__form__row">
+                  <dt class="contact__form__label">
+                    <label for="textarea">メッセージ</label>
+                  </dt>
+                  <dd
+                    class="contact__form__input contact__form__input__bordernone"
+                  >
+                    <textarea
+                      class="contact__form__input__textarea"
+                      name="entry.2091451453"
+                      id="textarea"
+                    ></textarea>
+                  </dd>
+                </div>
+              </dl>
+              <div class="contact__form__policy">
+                <label class="contact__form__privacy">
+                  <!-- input囲むときはforはいらない -->
+                  <input
+                    type="checkbox"
+                    name="entry.574535232"
+                    id="checkbox"
+                    class="contact__form__policy__checkbox"
+                    value="個人情報保護方針に同意する" />
+                  <span class="contact__form__privacy__part"></span
+                ></label>
+                <a href="#" target="blank">個人情報保護方針に同意する</a>
+              </div>
+              <div class="contact__form__submit__wrap">
+                <input
+                  type="submit"
+                  id="js-submit"
+                  class="l-button contact__form__submit"
+                  value="送信する"
+                  disabled=""
+                />
+              </div>
+            </form>
+          </div>
+          <div id="js-success" class="contact__form__message">
+            <p>送信完了しました。ありがとうございました。</p>
+          </div>
+          <div id="js-error" class="contact__form__message error">
+            <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact -->
 
     <footer class="footer">
       <div class="footer__inner inner">

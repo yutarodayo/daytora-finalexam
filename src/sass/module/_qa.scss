@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.qa {
+    background: url(../images/common/qa-bg@2x.png) no-repeat center center/cover;
+    height: auto;
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+    height: auto;
+    max-width: rem(1280);
+    margin: 0 auto;
+    padding-bottom: rem(120);
+    }
+}
+
+.section-title__qa {
+    
+}

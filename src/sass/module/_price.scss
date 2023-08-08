@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.price {
+  padding-bottom: rem(120);
+  background-color: $key-gray;
+
+  @include mq(md) {
+    padding-top: rem(60);
+    padding-bottom: rem(268);
+  }
+  
+}
+
+.price__table__wrapper {
+  @include mq(md) {
+    margin: 0 rem(120);
+  }
+}
+
+.price__table {
+  width: 100%;
+  font-size: rem(24);
+  font-weight: 600;
+}
+
+.price__table 
+ table,th,td {
+
+border: solid rem(1) #707070;
+}
+
+.price__table th {
+  width: 27%;
+}
+
+.price__table td {
+  width: 73%;
+  padding: rem(16);
+
+  @include mq(md) {
+    padding: rem(16) rem(40);
+  }
+}
+
+.price__table__header {
+  background-color: $font-key-black;
+  color: #fff;
+}
+
+.price__table__data {
+  background-color: #fff;
+  color: $font-key-black;
+}
+
+.price__attention {
+  font-size: rem(12);
+}

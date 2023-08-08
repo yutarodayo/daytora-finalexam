@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.comment {
+    background-color: $font-key-black;
+    padding: 0 rem(16);
+
+    @include mq(md) {
+    padding: 0 rem(40);
+    }
+    
+}
+
+.comment-inner {
+    background-color: #fff;
+    
+    
+
+    @include mq(md) {
+        width: calc(100% - rem(80));
+        background-color: transparent;
+        max-height: rem(676);
+    }
+    
+}
+
+.comment__left {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    max-height: 100%;
+}
+
+.comment__right {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+  
+
+img {
+    height: 73.5%; /* 444/604*/
+    }
+}
+}

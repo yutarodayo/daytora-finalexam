@@ -1,1 +1,39 @@
 @use "global" as *;
+
+.results {
+    
+background: #F3F3F3;
+
+@include mq(md) {
+    padding-left: rem(40);
+}
+}
+
+.results__inner {
+padding-bottom: rem(40);
+
+@include mq(md) {
+    padding-bottom: rem(60);
+}
+}
+
+.results__inner__inner {
+
+
+    @include mq(md) {
+        padding-left: rem(60);
+    }
+    
+}
+
+.results__box__layout {
+   
+}
+
+.results__card__layout {
+    margin: 0 auto;
+}
+
+.results__box__layout {
+    
+}

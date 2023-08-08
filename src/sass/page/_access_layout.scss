@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.access {
+    @include mq(md) {
+    
+        max-height: rem(760);
+        height: rem(760);
+    }
+}
+
+.access__top {
+
+    @include mq(md) {
+        background: linear-gradient(to right, $font-key-black 69.39%, #fff 30.61%);
+        
+       
+    }
+    
+}
+
+.access__inner.inner {
+    @include mq(md) {
+        padding: 0;
+    }
+}
+
+.access__container {
+
+    @include mq(md) {
+    display: flex;
+    position: relative;
+    }
+}
+
+.access__map__wrapper {
+
+    @include mq(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        }
+}
+
+.access__under {
+    display: none;
+    
+    @include mq(md) {
+        display: block;
+        height: 33.69%; /* under256/top504+256*/
+        background-color: #F3F3F3;
+    }
+}

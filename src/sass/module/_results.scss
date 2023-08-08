@@ -1,1 +1,30 @@
 @use "global" as *;
+
+.results__inner__layout {
+    background: $font-key-black;
+}
+
+.section-title__layout.section-title__results {
+    color: #fff;
+
+    @include mq(md) {
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+
+.button__general__results {
+    
+    border: 1px solid transparent;
+    
+    a {
+    color: #fff;
+
+    }
+
+    @include mq(md) {
+        margin: 0;
+    }
+}
+

@@ -29,6 +29,10 @@
 
 .service__inner__under {
     height: rem(391);
+
+    @include mq(md) {
+        height: rem(200);
+    }
     
 }
 

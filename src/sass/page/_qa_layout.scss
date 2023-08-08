@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.qa-inner {
+
+
+}
+
+.qa__cotainer {
+    @include mq(md) {
+    width: 50%;
+    margin-left: auto;
+        }
+    }

@@ -1,20 +1,15 @@
 @use "global" as *;
 
-.button__general__wrapper {
-    text-align: center;
-}
-
 .button__general {
-    width: rem(268);
-    height: rem(54);
-    
+    display: inline-block;
     border: 1px solid #707070;
-
-    a {
-        color: $font-key-black;
+    margin: 0 auto;
+    padding: rem(14) rem(95);
+    color: $font-key-black;
         display: block;
         font-size: rem(18);
         letter-spacing: rem(3.6);
         font-weight: 600;
-    }
+
+   
 }

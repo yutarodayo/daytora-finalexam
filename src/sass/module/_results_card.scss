@@ -1,1 +1,47 @@
 @use "global" as *;
+
+.results__card {
+    width: rem(274);
+
+    @include mq(md) {
+    width: rem(400);
+    }
+}
+
+.results__card__image {
+    
+padding-top: 62.4%;
+// 171/274
+position: relative;
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+
+}
+}
+
+.results__card__body {
+    color: $font-key-black;
+    background: #fff;
+    padding: rem(12);
+}
+
+.results__card__title {
+font-size: rem(14);
+font-weight: 700;
+letter-spacing: rem(0.01);
+}
+
+.results__card__text {
+    font-size: rem(12);
+    letter-spacing: rem(0.01);
+    margin-top: rem(12);
+}

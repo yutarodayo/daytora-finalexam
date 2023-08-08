@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.comment__left {
+  padding: rem(40) rem(20);
+
+  @include mq(md) {
+    padding: rem(120) rem(60);
+  }
+}
+
+.section-title__layout.section-title__comment {
+  text-align: left;
+  padding: 0;
+}
+
+.comment__left__body {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: rem(40);
+
+  @include mq(md) {
+    width: calc(100% - rem(30));
+    margin-top: rem(60);
+  }
+}
+
+.comment__left__img {
+  // padding-top: 100%; これ入れると画像の縦がbodyと同じになり大きくなってしまう
+  max-width: 100%;
+  // 60/60
+  position: relative;
+  width: 22.7%; /*60/280 マージンは上で抜いてる、画像60,テキスト223合わせて280*/
+
+  @include mq(md) {
+    width: 19.4%; /*100/514 画像100,テキスト414合わせて514 */
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  img {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 100%;
+    // height: auto;
+    // object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.comment__left__text {
+  font-size: rem(14);
+  line-height: 1.4286; /* 20/14*/
+  width: 77.3%; /*100-22.7 */
+  margin-left: rem(20);
+
+  @include mq(md) {
+    width: 80.6%; /*100/514 画像100,テキスト414合わせて514 */
+
+  }
+}

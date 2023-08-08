@@ -1,0 +1,36 @@
+@use "global" as *;
+
+
+
+.comment__layout {
+    position: relative;
+    height: rem(425);
+
+
+   @include mq(md) {
+    background: linear-gradient(to right, $font-key-black 69.39%, #F3F3F3 30.61%); 
+//     background: -moz-linear-gradient(開始位置, 開始色, 終了色); 
+// background: -webkit-linear-gradient(開始位置, 開始色, 終了色); 
+// background: linear-gradient(to 方向, 開始色, 終了色); 開始色、終了色の後に%を指定すればその色だけになる、指定してない場合、その間はグラデーションとなる
+/* 300/908=30.61% 69.39%*/
+height: rem(576);
+   }
+
+}
+
+.comment-inner {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - rem(32));
+    max-width: rem(1280);
+    
+
+    @include mq(md) {
+        top: -25%;
+        display: flex;
+        align-items: center;
+        
+    }
+}
