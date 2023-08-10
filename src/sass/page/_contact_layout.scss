@@ -1,1 +1,17 @@
 @use "global" as *;
+
+.contact__form__row {
+    @include mq(md) {
+    display: flex;
+    align-items: center;
+
+    
+    }
+}
+
+.contact__form__row__textarea {
+    @include mq(md) {
+    display: block;
+    }
+
+}

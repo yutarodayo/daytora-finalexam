@@ -17,14 +17,10 @@
 .button__general__results {
     
     border: 1px solid transparent;
-    
-    a {
-    color: #fff;
-
-    }
 
     @include mq(md) {
         margin: 0;
+        border: 1px solid #fff;
     }
 }
 

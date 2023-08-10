@@ -11,14 +11,14 @@
     @include mq(md) {
     display: flex;
     justify-content: space-between;
-    padding: rem(40) rem(45);
+    padding: rem(60) rem(45);
     }
 }
 
 
 .service__card__layout {
     &:nth-child(n + 2) {
-        margin-top: rem(40);
+        margin-top: rem(36.56);
         
       }
 

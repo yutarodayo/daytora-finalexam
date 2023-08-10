@@ -2,7 +2,7 @@
 
 .news {
     position: relative;
-    height: rem(600);
+    height: rem(521.6);
 
     @include mq(md) {
     height: inherit;
@@ -14,7 +14,7 @@
     position: absolute;
     content: "";
     height: inherit;
-    top: -5%;
+    top: -18%;
     left: 0;
 
     @include mq(md) {
@@ -30,5 +30,5 @@
 }
 
 .news__text_l {
-    margin-top: rem(12);
+    margin-top: rem(8.32);
 }

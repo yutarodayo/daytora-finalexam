@@ -2,12 +2,14 @@
 
 .section-main {
   width: 100%;
-  height: rem(600);
+  height: rem(720);
   top: 0;
   background: url(../images/common/mv@2x.png) no-repeat;
-background-size: rem(1150);
-background-position: top 95% left 24%;
+background-size: rem(1312);
+background-position: top 0 left 22%;
 position: relative;
+
+@include mq(md) {
 
 &::before {
   content: "";
@@ -17,6 +19,7 @@ position: relative;
   width: 100%;
   height: inherit;
   background-color: rgba($color: $key-gray, $alpha: 0.1);
+}
 }
 
 
@@ -43,7 +46,7 @@ position: relative;
   font-size: rem(24);
   font-weight: 700;
   line-height: 1.666;
-  padding-top: rem(216);
+  padding-top: rem(222.72);
 
   @include mq(md) {
   font-size: rem(32);
@@ -55,10 +58,25 @@ position: relative;
 .main-subtitle {
   font-size: rem(14);
   font-weight: 700;
-  line-height: 1.429;
+  line-height: 1.56;
 
   @include mq(md) {
     font-size: rem(18);
   line-height: 1.556;
+  }
+}
+
+.button-wrapper_main {
+
+  @include mq(md) {
+  
+  position: absolute;
+  top: 66%;/*画像の左上に配置*/
+  left: 50%;
+  margin: 0; /*余計な隙間を除く*/
+  color: white;/*文字を白に*/
+  font-size: 15px;
+  line-height: 1;/*行高は1に*/
+  padding: 5px 10px;/*文字周りの余白*/
   }
 }

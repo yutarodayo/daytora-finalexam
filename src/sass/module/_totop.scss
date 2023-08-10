@@ -1,0 +1,14 @@
+@use "global" as *;
+
+/* page_top */
+#page_top{
+    position:fixed;
+    right: rem(30);
+    bottom: rem(30);
+    cursor:pointer;
+    z-index: 50;
+    width: rem(50);
+    height: rem(50);
+
+
+}

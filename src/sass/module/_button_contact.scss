@@ -16,5 +16,35 @@
         background-color: $key-orange;
         border-radius: 10px;
         box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
+
+        &:hover {
+            background-color: #F18900;
+        }
+
+
+        @include mq(md) {
+        padding: rem(16) rem(50);
+        }
     }
+
+    input[type="submit"] {
+        display: inline-block;
+        color: $font-key-white;
+        padding: rem(14) rem(50);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        background-color: #B2B2B2;
+        font-weight: 700;
+        border-radius: 10px;
+
+        &.js-active {
+            background-color: $key-orange;
+
+            &:hover {
+                background-color: #F18900;
+            }
+        }
+
+    }
+
+    
 }

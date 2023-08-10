@@ -75,8 +75,9 @@
   display: block;
   font-size: rem(23);
   font-weight: bold;
-  padding: rem(20) rem(16);
+  padding: rem(20) rem(17.44);
   color: #3e3e3e;
+
 }
 
 .header__nav {
@@ -110,4 +111,22 @@
   display: block;
   font-size: rem(16);
   letter-spacing: rem(-0.4);
+  position: relative;
+
+  &:hover::after { /* &::after:hoverの順だと起動しない */
+    transition: all 0.1s ease-in;
+    
+
+    content: "";
+position: absolute;
+left: 50%;
+bottom: rem(-3);/*線の上下位置*/
+display: inline-block;
+width: calc(100% + rem(14));/*線の長さ*/
+height: rem(2);/*線の太さ*/
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);/*位置調整*/
+background-color: $font-key-black;/*線の色*/
+border-radius: 2px;/*線の丸み*/
+  }
 }

@@ -1,35 +1,39 @@
 @use "global" as *;
 
 .news__card__link {
-    display: block;
+  display: block;
+  
+  &:hover {
+    transition: all 0.1s ease-in;
+    background-color: #4973ff1a;
+  }
 
-    a{
-        display: block;
-    }
+  a {
+    display: block;
+  }
 }
 
 .news__card {
-    
-   max-width: rem(1080);
-   border-bottom: solid 1px #CECDCD;
-   font-size: rem(14);
-   padding: rem(14) rem(55) rem(10) rem(16);
-   position: relative;
+  max-width: rem(1080);
+  border-bottom: solid 1px #cecdcd;
+  font-size: rem(14);
+  padding: rem(14) rem(55) rem(10) rem(16);
+  position: relative;
 
-@include mq(md) {
+  @include mq(md) {
     font-size: rem(18);
     letter-spacing: rem(0.45);
     line-height: 1.556;
-display: flex;
-align-items: center;
-padding: rem(20) rem(55) rem(20) rem(16);
-}
+    display: flex;
+    align-items: center;
+    padding: rem(20) rem(55) rem(20) rem(16);
+  }
 
-   &:nth-child(1) {
-    border-top: 1px solid #CECDCD;
-   }
+  &:nth-child(1) {
+    border-top: 1px solid #cecdcd;
+  }
 
-   &::after {
+  &::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -38,44 +42,42 @@ padding: rem(20) rem(55) rem(20) rem(16);
     width: rem(43);
     height: rem(43);
     background: url(../images/common/news-arrow-1.svg) no-repeat center center;
-   }
-
+  }
 }
 
 .news__header {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .news__date {
-    letter-spacing: rem(0.35);
- 
- @include mq(md) {
+  letter-spacing: rem(0.35);
+
+  @include mq(md) {
     width: rem(98);
- }
+  }
 }
 
 .news__title {
-font-size: rem(12);
-letter-spacing: rem(0.3);
-margin-left: rem(24);
-border-radius: 50px;
-border: 2px solid #3B69FF;
-padding: 0 rem(16);
-text-align: center;
+  font-size: rem(11.68);
+  letter-spacing: rem(0.3);
+  margin-left: rem(24);
+  border-radius: 50px;
+  border: 2px solid #3b69ff;
+  padding: 0 rem(14.4);
+  text-align: center;
 
-@include mq(md) {
+  @include mq(md) {
     width: rem(121);
-}
-
+  }
 }
 
 .news__text {
-line-height: 1.429;
+  line-height: 1.41;
 
-@include mq(md) {
+  @include mq(md) {
     padding-left: rem(40);
     padding-right: rem(40);
-padding-bottom: rem(20);
-}
+    padding-bottom: rem(20);
+  }
 }
