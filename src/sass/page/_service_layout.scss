@@ -13,7 +13,7 @@
   position: absolute;
   content: "";
   height: rem(694);
-  top: rem(-340);
+  top: rem(-364.8);
   left: 50%;
   transform: translateX(-50%);
 
@@ -25,6 +25,10 @@
 
 .service__cards__layout {
     margin: 0 auto;
+}
+
+.service__card__image__layout.service__card__image__adjust {
+    height: rem(55.52);
 }
 
 

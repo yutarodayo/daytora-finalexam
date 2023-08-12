@@ -11,7 +11,7 @@
 
 .swiper-pagination {
   padding-top: rem(24);
-  padding-bottom: rem(24);
+  padding-bottom: rem(22.4);
   position: static;
   text-align: center;
 
@@ -23,13 +23,17 @@
   }
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  width: 95%;
+}
+
 .swiper-pagination-bullets {
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0;
-  margin-left: rem(16);
+  margin-left: rem(19.2);
 }
 
 .swiper-pagination-bullet {

@@ -27,13 +27,13 @@
   background: url(../images/common/contact1@2x-2.png) no-repeat center
     center/cover;
     
-  padding: 0 rem(16) rem(40);
+  padding: 0 rem(16) rem(36.48);
   border-radius: rem(12) rem(12) 0 0;
   p {
     color: #fff;
     font-size: rem(14);
     line-height: 1.429;
-    margin-top: rem(12);
+    margin-top: 0.21rem;
 
     @include mq(md) {
     text-align: center;
@@ -50,7 +50,7 @@
 .contact__form {
   background-color: #fff;
   height: auto;
-  padding: rem(40) rem(12);
+  padding: rem(36.64) rem(12);
   border-radius: 0 0 rem(12) rem(12);
 
   @include mq(md) {
@@ -58,13 +58,10 @@ padding: rem(60) rem(120);
   }
 }
 
-.contact__form__input__text {
-  
-}
 
 .contact__form__row {
   &:nth-child(n + 2) {
-    margin-top: rem(32);
+    margin-top: 1.713rem;
   }
 }
 
@@ -87,26 +84,31 @@ padding: rem(60) rem(120);
   &::after {
     content: "必須";
     position: absolute;
-    top: 0;
+    top: rem(3.39);
     right: 0;
     font-size: rem(12);
     font-weight: 700;
     color: #fff;
     background-color: $key-red;
     border-radius: rem(2);
-    padding: rem(2) rem(8);
+    padding: 0 rem(8);
     text-align: center;
   }
 }
 
 .contact__form__input {
   border-bottom: solid rem(1) #707070;
-  margin-top: rem(16);
+  margin-top: rem(6.4);
   width: 100%;
 
   input {
     width: 100%;
     font-size: rem(14);
+
+    &[type="email"] {
+      
+    letter-spacing: -0.069rem;
+    }
   }
 
   @include mq(md) {
@@ -127,7 +129,7 @@ padding: rem(60) rem(120);
 }
   
 .contact__form__row__textarea  {
-margin-top: rem(32);
+margin-top: 1.53rem;
   }
 
 
@@ -148,14 +150,19 @@ margin-top: rem(32);
 
 .contact__form__input__select {
 border-color: transparent;
-  padding: rem(8) rem(12);
+  padding: rem(8) rem(10.24);
   font-size: rem(14);
   width: 100%; 
 }
 
 .contact__form__input__select__wrapper {
   position: relative;
+width: 100%;
+margin-top: rem(10.3);
+
+@include mq(md) {
 width: 33%;
+}
 
   &::after {
     content: "";
@@ -164,8 +171,8 @@ width: 33%;
     right: rem(14);
     transform: translate(-50%, -50%);
     display: block;
-    width: rem(10);
-    height: rem(10);
+    width: rem(9.12);
+    height: rem(9.12);
     border-bottom: rem(3) solid #000;
     border-right: rem(3) solid #000;
     rotate: (45deg);
@@ -174,7 +181,7 @@ width: 33%;
 
 
 .contact__form__input__radio {
-  margin-top: rem(16);
+  margin-top: 0.52rem;
 
   @include mq(md) {
   margin-top: 0;
@@ -183,7 +190,7 @@ width: 33%;
 
 .contact__radio {
   &:nth-of-type(n + 2) {
-    margin-left: rem(40);
+    margin-left: 2.2rem;
   }
 }
 
@@ -239,7 +246,7 @@ width: 33%;
   border: solid rem(1) #707070;
   width: 100%;
   height: rem(160);
-  margin-top: rem(16);
+  margin-top: 0.7rem;
 
   @include mq(md) {
     margin-top: rem(8);
@@ -257,10 +264,14 @@ width: 33%;
 .contact__form__policy {
   font-weight: 700;
   color: $font-key-black;
-  margin-top: rem(32);
+  margin-top: 1.85rem;
   padding-left: rem(40);
 display: inline-block;
 position: relative;
+
+a {
+  letter-spacing: rem(-0.2);
+}
  
 .contact__form__privacy__part {
 
@@ -321,5 +332,5 @@ position: relative;
 
 
 .contact__form__submit__wrap {
-
+margin-top: rem(29.7);
 }

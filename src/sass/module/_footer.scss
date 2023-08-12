@@ -10,21 +10,12 @@
     text-align: justify;
   }
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    background: rgba($color: $font-key-black, $alpha: 0.1);
-  }
 }
 
 .footer__inner {
-  padding-top: rem(60);
+  padding-top: 3.15rem;
   padding-bottom: rem(57);
+
 
   @include mq(md) {
     display: flex;
@@ -106,4 +97,13 @@
 
 .footer__copy {
   font-size: rem(12);
+}
+
+.footer-filter {
+  background-color: rgba($color: $font-key-black, $alpha: 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

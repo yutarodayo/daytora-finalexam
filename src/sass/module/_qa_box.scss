@@ -3,10 +3,10 @@
 .qa__box__wrapper {
   border-radius: rem(4);
   background-color: #fff;
-  padding: rem(16);
+  padding: 1.03rem rem(16) 0.97rem rem(16);
 
   &:nth-child(n +2) {
-    margin-top: rem(24);
+    margin-top: 1.463rem;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .qa__box__q {
-  padding-left: rem(40);
+  padding-left: rem(41.072);
   padding-right: rem(40);
   color: $font-key-black;
   font-weight: 700;
@@ -38,7 +38,7 @@
 
 .qa__box__icon {
   position: absolute;
-  top: 50%;
+  top: 43.8%;
   transform: translateY(-50%);
   right: 0;
   width: rem(17);
@@ -75,11 +75,12 @@
 
 .qa__a {
   background: #fff;
-  padding: rem(12) rem(16) rem(12) rem(12);
+  padding: rem(8.96) rem(16) rem(7.36) rem(12);
   display: none;
   font-size: rem(14);
   background-color: #3B69FF33;
-  margin-top: rem(20);
+  margin-top: 0.92rem;
+  border-radius: rem(4);
 }
 
 .qa-content {

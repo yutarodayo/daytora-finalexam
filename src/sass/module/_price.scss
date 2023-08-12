@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price {
-  padding-bottom: rem(120);
+  padding-bottom: rem(116);
   background-color: $key-gray;
 
   @include mq(md) {
@@ -19,23 +19,28 @@
 
 .price__table {
   width: 100%;
-  font-size: rem(24);
+  font-size: rem(20);
   font-weight: 600;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 
 .price__table 
  table,th,td {
 
-border: solid rem(1) #707070;
+  border: solid rem(1) #707070;
+border-spacing: 0 0;
 }
 
 .price__table th {
-  width: 27%;
+  width: 28.2%;
 }
 
 .price__table td {
-  width: 73%;
-  padding: rem(16);
+  width: 68%;
+  padding: rem(11.424) rem(16.68);
 
   @include mq(md) {
     padding: rem(16) rem(40);
@@ -54,4 +59,5 @@ border: solid rem(1) #707070;
 
 .price__attention {
   font-size: rem(12);
+  margin-top: rem(4);
 }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .comment__left {
-  padding: rem(40) rem(20);
+  padding: rem(35.2) rem(19.792) rem(38.08) rem(20);
 
   @include mq(md) {
     padding: rem(120) rem(60);
@@ -17,7 +17,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  margin-top: rem(40);
+  margin-top: rem(33.12);
 
   @include mq(md) {
     width: calc(100% - rem(30));
@@ -30,7 +30,8 @@
   max-width: 100%;
   // 60/60
   position: relative;
-  width: 22.7%; /*60/280 マージンは上で抜いてる、画像60,テキスト223合わせて280*/
+  width: 21%; /*60/280 マージンは上で抜いてる、画像60,テキスト223合わせて280*//*その後ピクパで微調整 */
+  margin-top: rem(3.9);
 
   @include mq(md) {
     width: 19.4%; /*100/514 画像100,テキスト414合わせて514 */
