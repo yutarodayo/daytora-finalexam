@@ -27,8 +27,20 @@
 
 .news__card_l {
     margin: 0 auto;
+
+}
+
+.news__card_l.news__card__adjust {
+    @include mq(md) {
+        padding: 1.7rem rem(55) 1.66rem 0;
+    }
+
 }
 
 .news__text_l {
     margin-top: rem(8.32);
+}
+
+.news__text.news__text__adjust {
+    padding-top: 1.7px;
 }

@@ -5,7 +5,7 @@
   height: rem(720);
   top: 0;
   background: url(../images/common/mv@2x.png) no-repeat;
-background-size: rem(1312);
+background-size: 82.27rem;
 background-position: top 0 left 22%;
 position: relative;
 
@@ -20,14 +20,11 @@ position: relative;
   height: inherit;
   background-color: rgba($color: $key-gray, $alpha: 0.1);
 }
-}
 
-
-  @include mq(md) {
     display: flex;
     justify-content: end;
     background-position: center center;
-    height: rem(643);
+    height: 40.49rem;
     width: 100%;
     max-width: rem(1280);
     background-size: rem(1280);
@@ -51,7 +48,7 @@ position: relative;
   @include mq(md) {
   font-size: rem(32);
   line-height: 1.5;
-  padding-top: rem(236);
+  padding-top: 14.3rem;
   }
 }
 
@@ -63,6 +60,8 @@ position: relative;
   @include mq(md) {
     font-size: rem(18);
   line-height: 1.556;
+  margin-top: rem(10.59);
+  letter-spacing: rem(0.44);
   }
 }
 
@@ -71,12 +70,18 @@ position: relative;
   @include mq(md) {
   
   position: absolute;
-  top: 66%;/*画像の左上に配置*/
-  left: 50%;
+  top: 67.9%;/*画像の左上に配置*/
+  left: 49.4%;
   margin: 0; /*余計な隙間を除く*/
   color: white;/*文字を白に*/
-  font-size: 15px;
+  font-size: rem(18);
   line-height: 1;/*行高は1に*/
-  padding: 5px 10px;/*文字周りの余白*/
+  padding: 5px rem(9.9);/*文字周りの余白*/
+  }
+
+  a {
+    @include mq(md) {
+    letter-spacing: rem(0.02);
+    }
   }
 }

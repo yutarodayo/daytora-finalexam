@@ -10,5 +10,9 @@
     width: 3.1rem;
     height: 2.8rem;
 
+@include mq(md) {
+right: 2.5rem;
+bottom: 2.92rem;
+}
 
 }

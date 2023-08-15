@@ -5,8 +5,16 @@
   background-color: #fff;
   padding: 1.03rem rem(16) 0.97rem rem(16);
 
+  @include mq(md) {
+    padding: 1.03rem rem(16) 1rem rem(16);
+  }
+
   &:nth-child(n +2) {
     margin-top: 1.463rem;
+    
+@include mq(md) {
+  margin-top: 1.9rem;
+}
   }
 }
 
@@ -26,6 +34,12 @@
     color: #fff;
     padding: rem(1) rem(3);
     text-align: center;
+
+    @include mq(md) {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 rem(3);
+    }
 }
 
 .qa__box__q {
@@ -81,8 +95,14 @@
   background-color: #3B69FF33;
   margin-top: 0.92rem;
   border-radius: rem(4);
+
+  @include mq(md) {
+  padding: 0.73rem 1rem 0.8rem 1rem;
+  }
 }
 
 .qa-content {
-
+@include mq(md) {
+font-size: rem(16);
+}
 }

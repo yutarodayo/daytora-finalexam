@@ -48,6 +48,8 @@
 
       @include mq(md) {
         background-color: rgba(255, 255, 255, 0.1);
+        height: 5.05rem;
+
       }
   }
 
@@ -112,6 +114,11 @@
   font-size: rem(16);
   letter-spacing: rem(-0.4);
   position: relative;
+
+  @include mq(md) {
+    letter-spacing: -0.014rem;
+
+  }
 
   &:hover::after { /* &::after:hoverの順だと起動しない */
     transition: all 0.1s ease-in;

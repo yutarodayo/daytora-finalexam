@@ -28,8 +28,21 @@ padding-bottom: rem(40);
 
 .results__box__layout {
    padding-left: rem(4.8);
+
+   @include mq(md) {
+   padding-left: 0;
+   }
 }
 
 .results__card__layout {
     margin: 0 auto;
+}
+
+.br__adjust {
+    display: none;
+
+    @include mq(md) {
+    
+    display: block;
+    }
 }

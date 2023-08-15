@@ -30,6 +30,7 @@
 
   @include mq(md) {
     padding-left: rem(120);
+    font-size: 1rem;
   }
 }
 
@@ -89,6 +90,12 @@
   font-size: rem(32);
   font-weight: 700;
   color: $key-gray;
+
+  @include mq(md) {
+  font-size: rem(40);
+  margin-top: rem(5);
+  letter-spacing: rem(0.38);
+  }
 
   a {
     display: block;

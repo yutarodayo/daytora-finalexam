@@ -11,7 +11,7 @@
 .access__top {
 
     @include mq(md) {
-        background: linear-gradient(to right, $font-key-black 69.39%, #fff 30.61%);
+        background: linear-gradient(to right, $font-key-black 76.5%, #fff 23.5%);
         
        
     }
@@ -20,7 +20,7 @@
 
 .access__inner.inner {
     @include mq(md) {
-        padding: 0;
+        padding: 0 0 0 1.2rem;
     }
 }
 

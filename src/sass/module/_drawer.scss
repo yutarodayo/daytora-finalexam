@@ -10,120 +10,108 @@
   right: rem(16);
   z-index: 302;
   transition: transform ease 0.5s 0s;
-  
-    
-    @include mq(md){
+
+  @include mq(md) {
+    display: none;
+  }
+
+  &.is-active {
+    transform: translateX(rem(-300));
+
+    .drawer__icon__bar1 {
       display: none;
     }
-    
-    &.is-active {
-      transform: translateX(rem(-300));
-  
-      .drawer__icon__bar1 {
-        display: none;
-      }
-  
-      .drawer__icon__bar2 {
-        top: 8px;
-        transform: rotate(-45deg);
-        background: $font-key-white;
-        
-      }
-  
-      .drawer__icon__bar3 {
-        top: 8px;
-        transform: rotate(45deg);
-        background: $font-key-white;
-   
-      }
+
+    .drawer__icon__bar2 {
+      top: 8px;
+      transform: rotate(-45deg);
+      background: $font-key-white;
+    }
+
+    .drawer__icon__bar3 {
+      top: 8px;
+      transform: rotate(45deg);
+      background: $font-key-white;
     }
   }
+}
 
-  .drawer__background {
-    display: none;
-  
+.drawer__background {
+  display: none;
+}
+
+.drawer__icon__bars {
+  // ハンバーガーアイコンのこと
+  width: rem(26);
+  height: inherit;
+  position: relative;
+  display: block;
+}
+
+.drawer__icon__bar1,
+.drawer__icon__bar2,
+.drawer__icon__bar3 {
+  position: absolute;
+  top: 0;
+  left: rem(2);
+  width: 1.6rem;
+  height: 4px;
+  background: $font-key-black;
+}
+
+.drawer__icon__bar2 {
+  top: 8px;
+}
+
+.drawer__icon__bar3 {
+  top: 16px;
+}
+
+.drawer__content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: rem(300);
+  height: 100vh;
+  background: #fff;
+  z-index: 301;
+  transform: translateX(105%);
+  transition: transform ease 0.5s 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &.is-active {
+    transform: translateX(0);
   }
-  
-  .drawer__icon__bars {
-    // ハンバーガーアイコンのこと
-    width: rem(26);
-    height: inherit;
-    position: relative;
+}
+
+.drawer__items {
+  margin-top: 6.3rem;
+}
+
+.drawer__items__item {
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 0.821rem;
+    font-size: rem(18);
+    font-weight: 500;
+    margin-top: 0.045rem;
+  }
+}
+
+.drawer__background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(62, 62, 62, 0.7);
+  z-index: 300;
+
+  &.is-active {
     display: block;
   }
-  
-  .drawer__icon__bar1,
-  .drawer__icon__bar2,
-  .drawer__icon__bar3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: rem(26);
-    height: 4px;
-    background: $font-key-black;
-    
-  }
-  
-  .drawer__icon__bar2 {
-    top: 8px;
-  }
-  
-  .drawer__icon__bar3 {
-    top: 16px;
-  }
-
-  
-  
-  .drawer__content {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: rem(300);
-    height: 100vh;
-    background: #fff;
-    z-index: 301;
-    transform: translateX(105%);
-    transition: transform ease 0.5s 0s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-   
-  
-    &.is-active {
-      transform: translateX(0);
-    }
-  }
-  
-  
-  .drawer__items__item {
-    
-  
-    a {
-      display: block;
-      text-decoration: none;
-      padding: rem(16);
-      font-size: rem(18);
-      font-weight: 500;
-    }
-  }
-
-  .drawer__items__item {
-
-  }
-  
-  .drawer__background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(62, 62, 62, 0.7);
-    z-index: 300;
-    
-  
-    &.is-active {
-      display: block;
-    }
-  }
+}

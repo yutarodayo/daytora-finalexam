@@ -4,7 +4,8 @@
   padding: rem(35.2) rem(19.792) rem(38.08) rem(20);
 
   @include mq(md) {
-    padding: rem(120) rem(60);
+    padding: 7.18rem 3.75rem 7.6rem 3.75rem;
+    width: 55.5%;
   }
 }
 
@@ -20,8 +21,11 @@
   margin-top: rem(33.12);
 
   @include mq(md) {
-    width: calc(100% - rem(30));
-    margin-top: rem(60);
+    margin-top: 3.23rem;
+
+    &:nth-of-type(n + 2) {
+      margin-top: 3.55rem;
+    }
   }
 }
 
@@ -34,7 +38,8 @@
   margin-top: rem(3.9);
 
   @include mq(md) {
-    width: 19.4%; /*100/514 画像100,テキスト414合わせて514 */
+    width: 19.3%; /*100/514 画像100,テキスト414合わせて514 */
+    margin-top: rem(4);
   }
 
   &::before {
@@ -67,6 +72,8 @@
 
   @include mq(md) {
     width: 80.6%; /*100/514 画像100,テキスト414合わせて514 */
-
+    font-size: rem(16);
+margin-left: 2.01rem;
+line-height: 1.5;
   }
 }

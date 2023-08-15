@@ -17,7 +17,7 @@
 
   @include mq(md) {
     padding-top: rem(40);
-    padding-bottom: rem(40);
+    padding-bottom: 2.3rem;
     position: static;
     text-align: left;
   }
@@ -25,6 +25,7 @@
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   width: 95%;
+  padding-left: rem(5.6);
 }
 
 .swiper-pagination-bullets {
@@ -34,6 +35,13 @@
   .swiper-pagination-bullet {
   margin: 0;
   margin-left: rem(19.2);
+
+  @include mq(md) {
+    margin-left: 0;
+    &:not(:first-child) {
+      margin-left: rem(19.2);
+    }
+  }
 }
 
 .swiper-pagination-bullet {

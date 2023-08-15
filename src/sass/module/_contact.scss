@@ -1,16 +1,14 @@
 @use "global" as *;
 
 .contact {
-  background: url(../images/common/contact-bg@2x.png) no-repeat 10%
-    center/cover;
+  background: url(../images/common/contact-bg@2x.png) no-repeat 10% center/cover;
 }
 
 .contact__form__inner.inner {
   @include mq(md) {
-  padding: rem(60) rem(160);
+    padding: rem(60) rem(160);
   }
-} 
-
+}
 
 .contact__form__wrapper {
   padding-top: rem(40);
@@ -20,15 +18,18 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  
 }
 
 .section-title__contact__wrapper {
   background: url(../images/common/contact1@2x-2.png) no-repeat center
     center/cover;
-    
   padding: 0 rem(16) rem(36.48);
   border-radius: rem(12) rem(12) 0 0;
+
+  @include mq(md) {
+    padding: 0 1rem 3.55rem;
+  }
+
   p {
     color: #fff;
     font-size: rem(14);
@@ -36,8 +37,9 @@
     margin-top: 0.21rem;
 
     @include mq(md) {
-    text-align: center;
-    font-size: rem(16);
+      text-align: center;
+      font-size: rem(16);
+      margin-top: 0.52rem;
     }
   }
 }
@@ -54,14 +56,18 @@
   border-radius: 0 0 rem(12) rem(12);
 
   @include mq(md) {
-padding: rem(60) rem(120);  
+    padding: rem(60) rem(120) 3.62rem;
+    font-size: rem(16);
   }
 }
 
-
 .contact__form__row {
   &:nth-child(n + 2) {
-    margin-top: 1.713rem;
+    margin-top: 1.72rem;
+
+    @include mq(md) {
+    margin-top: 1.9rem;
+    }
   }
 }
 
@@ -69,10 +75,8 @@ padding: rem(60) rem(120);
   color: $font-key-black;
   font-weight: 700;
 
- 
-
   @include mq(md) {
-  width: 23.8%;
+    width: 26.1%;
   }
 }
 
@@ -85,7 +89,7 @@ padding: rem(60) rem(120);
     content: "必須";
     position: absolute;
     top: rem(3.39);
-    right: 0;
+    right: rem(8);
     font-size: rem(12);
     font-weight: 700;
     color: #fff;
@@ -101,37 +105,56 @@ padding: rem(60) rem(120);
   margin-top: rem(6.4);
   width: 100%;
 
+  @include mq(md) {
+    width: 73.9%;
+  }
+
   input {
     width: 100%;
     font-size: rem(14);
 
+    @include mq(md) {
+      font-size: rem(16);
+
+      &::placeholder {
+        letter-spacing: rem(0.4);
+        padding-left: 0.6rem;
+      }
+    }
+
     &[type="email"] {
-      
-    letter-spacing: -0.069rem;
+      letter-spacing: -0.069rem;
+
+      @include mq(md) {
+        &::placeholder {
+          letter-spacing: 0.0145rem;;
+          font-size: rem(14);
+        }
+      }
+      }
     }
   }
 
-  @include mq(md) {
-    width: 76.2%;
-    margin-top: 0;
-  }
-}
 
-
-.contact__form .contact__form__input:hover, input[type="text"]:focus {
+.contact__form .contact__form__input:hover,
+input[type="text"]:focus {
   border-bottom: solid rem(1) rgba(73, 115, 255, 1);
   box-shadow: 0 rem(8) rem(8) rem(-5) #4973ff80;
 }
 
-.contact__form textarea:hover, textarea:focus {
+.contact__form textarea:hover,
+textarea:focus {
   border-color: rgba(73, 115, 255, 1);
   box-shadow: 0 0 rem(8) rgba(73, 115, 255, 0.5);
 }
-  
-.contact__form__row__textarea  {
-margin-top: 1.53rem;
-  }
 
+.contact__form__row__textarea {
+  margin-top: 1.53rem;
+
+  @include mq(md) {
+  margin-top: 1.4rem;
+  }
+}
 
 .contact__form__input__bordernone {
   border: none;
@@ -142,27 +165,30 @@ margin-top: 1.53rem;
   &:hover {
     box-shadow: 0 0 rem(5) rgba(73, 115, 255, 0.5);
     border: none;
-    
   }
 }
 
-
-
 .contact__form__input__select {
-border-color: transparent;
+  border-color: transparent;
   padding: rem(8) rem(10.24);
   font-size: rem(14);
-  width: 100%; 
+  width: 100%;
+
+  @include mq(md) {
+    font-size: rem(16);
+    padding: 0.43rem 0.64rem;
+  }
 }
 
 .contact__form__input__select__wrapper {
   position: relative;
-width: 100%;
-margin-top: rem(10.3);
+  width: 100%;
+  margin-top: rem(10.3);
 
-@include mq(md) {
-width: 33%;
-}
+  @include mq(md) {
+    width: 24.8%;
+    margin-top: 0;
+  }
 
   &::after {
     content: "";
@@ -179,12 +205,11 @@ width: 33%;
   }
 }
 
-
 .contact__form__input__radio {
   margin-top: 0.52rem;
 
   @include mq(md) {
-  margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -208,7 +233,6 @@ width: 33%;
     height: rem(12);
     border-radius: 50%;
     border: solid rem(1) #707070;
-
   }
 
   &::after {
@@ -229,16 +253,18 @@ width: 33%;
   }
 
   label:hover &::before {
-    border-color: rgba(59, 105, 255, 1); /* この色は希望の色に変更してください */
+    border-color: rgba(
+      59,
+      105,
+      255,
+      1
+    ); /* この色は希望の色に変更してください */
     box-shadow: 0 0 rem(5) rgba(73, 115, 255, 0.5);
-    
-    
   }
-    
-    label:active &::before {
-      background-color: rgba(73, 115, 255, 0.2);
-      border-color: rgba(73, 115, 255, 1);
 
+  label:active &::before {
+    background-color: rgba(73, 115, 255, 0.2);
+    border-color: rgba(73, 115, 255, 1);
   }
 }
 
@@ -249,8 +275,8 @@ width: 33%;
   margin-top: 0.7rem;
 
   @include mq(md) {
-    margin-top: rem(8);
-
+    margin-top: 0.3rem;
+    height: 12.47rem;
   }
 
   textarea {
@@ -260,77 +286,99 @@ width: 33%;
   }
 }
 
-
 .contact__form__policy {
   font-weight: 700;
   color: $font-key-black;
   margin-top: 1.85rem;
   padding-left: rem(40);
-display: inline-block;
-position: relative;
+  display: inline-block;
+  position: relative;
 
-a {
-  letter-spacing: rem(-0.2);
-}
- 
-.contact__form__privacy__part {
-
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: rem(18);
-    height: rem(18);
-    border: solid rem(1) #707070;
+  @include mq(md) {
+  margin-top: 2.36rem;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: rem(5);
-    transform: translateY(-50%) rotate(45deg);
-    width: rem(8);
-    height: rem(14);
-    border-bottom: solid rem(2) #3b69ff;
-    border-right: solid rem(2) #3b69ff;
-    display: none;
+  a {
+    letter-spacing: rem(-0.2);
+
+    @include mq(md) {
+    letter-spacing: 0.132rem;
+    font-size: rem(16);
+    }
   }
-}
+
+  .contact__form__privacy__part {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: rem(18);
+      height: rem(18);
+      border: solid rem(1) #707070;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: rem(5);
+      transform: translateY(-50%) rotate(45deg);
+      width: rem(8);
+      height: rem(14);
+      border-bottom: solid rem(2) #3b69ff;
+      border-right: solid rem(2) #3b69ff;
+      display: none;
+    }
+  }
 
   [type="checkbox"]:checked + span {
     &::after {
       display: block;
-  }
+    }
   }
 
-  
-//   label:hover &::before {
-//     border-color: rgba(59, 105, 255, 1); /* この色は希望の色に変更してください */
-//   }
-    
-//     label:active &::before {
-//       background-color: rgba(73, 115, 255, 0.2);
-//       background-color: rgba(73, 115, 255, 1);
+  //   label:hover &::before {
+  //     border-color: rgba(59, 105, 255, 1); /* この色は希望の色に変更してください */
+  //   }
 
-// }
+  //     label:active &::before {
+  //       background-color: rgba(73, 115, 255, 0.2);
+  //       background-color: rgba(73, 115, 255, 1);
+
+  // }
 }
 
 .contact__form__privacy:hover .contact__form__privacy__part::before {
-  border-color: rgba(59, 105, 255, 1); // this changes the checkbox border color on hover
+  border-color: rgba(
+    59,
+    105,
+    255,
+    1
+  ); // this changes the checkbox border color on hover
   box-shadow: 0 0 rem(5) rgba(73, 115, 255, 0.2);
 }
 
 .contact__form__privacy:active .contact__form__privacy__part::before {
-  background-color: rgba(73, 115, 255, 0.2); // this changes the checkbox background color when clicking
-  border-color: rgba(73, 115, 255, 1);       // this changes the checkbox border color when clicking
+  background-color: rgba(
+    73,
+    115,
+    255,
+    0.2
+  ); // this changes the checkbox background color when clicking
+  border-color: rgba(
+    73,
+    115,
+    255,
+    1
+  ); // this changes the checkbox border color when clicking
 }
 
-
-
 .contact__form__submit__wrap {
-margin-top: rem(29.7);
+  margin-top: rem(29.7);
+
+  @include mq(md) {
+  margin-top: 2.4rem;
+  }
 }

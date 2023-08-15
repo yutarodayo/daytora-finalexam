@@ -11,20 +11,25 @@
     @include mq(md) {
     display: flex;
     justify-content: space-between;
-    padding: rem(60) rem(45);
+    padding: 3.4rem 2.8125rem 3.693rem;
     }
 }
 
 
 .service__card__layout {
     &:nth-child(n + 2) {
-        margin-top: rem(51.2);
-        
+        margin-top: rem(51.2);  
       }
 
       @include mq(md) {
-        margin-left: rem(40);
-        margin-top: rem(40);
-        width: calc(rem(1280) - rem(270));
+
+        &:nth-child(n + 2) {
+          margin-top: initial;  // 既定のmargin-topをリセット
+          margin-top: 0.5rem;
+
+        }
+
+        width: calc((rem(960) - rem(270))/3);
+        margin-top: 0.3rem;
       }
     }

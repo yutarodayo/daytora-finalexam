@@ -30,6 +30,11 @@
   color: $font-key-black;
   background: #fff;
   padding: rem(4.8) rem(1.6) rem(6.4) rem(14.4);
+
+  @include mq(md) {
+  padding-right: 0;
+  padding: rem(4.8) rem(1.6) rem(6.4) 0.97rem;
+  }
 }
 
 .results__card__title {
@@ -40,6 +45,8 @@
 
   @include mq(md) {
     font-size: rem(20);
+    margin-top: 0.48rem;
+    letter-spacing: 0;
   }
 }
 
@@ -47,10 +54,14 @@
   font-size: rem(12);
   margin-top: rem(5.92);
   line-height: 1.5;
-  letter-spacing: rem(-0.13);
+  letter-spacing: rem(0.1);
 padding-right: rem(15);
 padding-bottom: rem(3);
+
   @include mq(md) {
     font-size: rem(16);
+    letter-spacing: 0;
+    padding-bottom: rem(13);
+
   }
 }

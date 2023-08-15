@@ -22,5 +22,11 @@
         margin: 0;
         border: 1px solid #fff;
     }
+
+    a {
+        @include mq(md) {
+        letter-spacing: 0.31rem;
+        }
+    }
 }
 
